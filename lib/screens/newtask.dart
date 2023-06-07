@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:tympe_app/screens/auth_pages/login.dart';
-import 'package:tympe_app/screens/auth_pages/signup.dart';
 import 'package:tympe_app/screens/homepage.dart';
 
 class NewTaskPage extends StatelessWidget {
