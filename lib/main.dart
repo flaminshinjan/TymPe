@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tympe_app/screens/auth_pages/login.dart';
 import 'package:tympe_app/screens/auth_pages/signup.dart';
+import 'package:tympe_app/screens/homepage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,10 +19,11 @@ class MyApp extends StatelessWidget {
             ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 33, 31, 171)),
         useMaterial3: true,
       ),
-      initialRoute: '/login',
+      initialRoute: '/home',
       routes: {
         '/login': (context) => LoginPage(),
         '/signup': (context) => SignUpPage(),
+        '/home': (context) => const HomePage(),
       },
     );
   }
