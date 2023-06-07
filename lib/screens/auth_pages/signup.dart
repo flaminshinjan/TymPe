@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:tympe_app/screens/auth_pages/login.dart';
 
 class SignUpPage extends StatelessWidget {
   const SignUpPage({super.key});
