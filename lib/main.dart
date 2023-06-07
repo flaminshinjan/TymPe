@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:tympe_app/screens/auth_pages/login.dart';
 import 'package:tympe_app/screens/auth_pages/signup.dart';
 import 'package:tympe_app/screens/homepage.dart';
+import 'package:tympe_app/screens/newtask.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,7 +24,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/login': (context) => LoginPage(),
         '/signup': (context) => SignUpPage(),
-        '/home': (context) => const HomePage(),
+        '/home': (context) => HomePage(),
+        '/newtask': (context) => NewTaskPage(),
       },
     );
   }

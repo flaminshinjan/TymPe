@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tympe_app/screens/auth_pages/login.dart';
+import 'package:tympe_app/screens/newtask.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -8,6 +9,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         toolbarHeight: 65,
         backgroundColor: Colors.black,
         title: Row(
@@ -101,6 +103,20 @@ class HomePage extends StatelessWidget {
             ],
           ),
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => NewTaskPage()),
+          );
+        },
+        backgroundColor: Colors.white,
+        shape: RoundedRectangleBorder(
+          borderRadius:
+              BorderRadius.circular(30), // Set the desired corner radius
+        ),
+        child: Icon(Icons.add),
       ),
     );
   }
